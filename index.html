@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title> Loja </title>
+
+        <vtex:metaTags />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script language="javascript" type="text/javascript"
+        	src="http://io.vtex.com.br/front-libs/jquery/1.8.3/jquery-1.8.3.min.js?v=1.4.771.1402"></script>
+		<link rel="stylesheet" href="css/vtextags.css"/>
+	</head>
+	<body>
+		<div class="_vtex-tags">
+			<div class="_vtex-tags-header">
+				<div class="_header-main">
+					<div class="_header-main">
+						<div class="_ptBr" lang="pt-BR">
+							<h1>Vtex - Lista de controles para templates</h1>
+						</div>
+						<div class="_enUS" lang="en-US">
+							<h1>Vtex tags</h1>
+						</div>
+					</div>
+				</div>
+				<div class="_header-filters">
+					<div class="_ptBr" lang="pt-BR">
+						<ul>
+							<li>Tudo</li>
+							<li>Home</li>
+							<li>PDP</li>
+							<li>Departamento/Categoria/Busca</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="_vtex-tags-intro">
+				<div class="_intro _ptBr" lang="pt-BR">
+					<p>Os controles listados abaixo são para uso na criação de templates 
+					(página em html) para a plataforma Vtex</p>
+					<p>Alguns destes controles devem ser utilizados apenas em páginas específicas, como por exemplo, a página de detalhes do produto (página do produto), e outros, apenas em páginas de departamento, categoria, busca ou hot sites (landing pages).</p>
+					<p>Verifique na tabela onde pode ser utilizado.</p>
+				</div>
+				<div class="_intro _enUS" lang="en-US"></div>
+			</div>
+			<div class="_vtex-tags-table">
+				<div class="_head">
+					<div class="_row _canonicalPage _head">
+						<div class="_tag">&lt;vtex.cmc:canonicalPage disable="true"/&gt;</div>
+						<div class="_html"></div>
+					</div>
+				</div>
+				<div class="_dept">
+					<div class="_row _breadCrumb">
+						<div class="_tag">&lt;vtex.cmc:breadCrumb /&gt;</div>
+						<div class="_html">
+							<div class="bread-crumb">
+								<ul>
+									<li>
+										<a title="Home" href="/">Home</a>
+									</li>
+									<li>
+										<a title="Departament" href="/departament">Departament</a>
+									</li>
+									<li class="last">
+										<strong><a title="Category" href="/category">Category</a></strong>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="_row _departmentLinks">
+						<div class="_tag">&lt;vtex.cmc:departmentLinks/&gt;</div>
+						<div class="_html">
+							<ul class="menu">
+								<li><a href="/department-1">Department 1</a></li>
+								<li><a href="/department-2">Department 2</a></li>
+								<li><a href="/department-3">Department 3</a></li>
+								<li><a href="/department-4">Department 4</a></li>
+								<li><a href="/department-5">Department 5</a></li>
+								<li><a href="/department-6">Department 6</a></li>
+								<li><a href="/department-7">Department 7</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="_row _departmentNavigator">
+						<div class="_tag">&lt;vtex.cmc:departmentNavigator/&gt;</div>
+						<div class="_html">
+							<div class="menu-departamento">
+								<span class="rt"></span> 
+								<span class="rb"></span>
+								<h3 class="department-1">
+									<span></span>
+									<a class="menu-item-texto" href="/department-1">Department 1</a>
+								</h3>
+								<ul class="department-1">
+									<li><a href="/department-1/category-1">Category 1</a></li>
+									<li><a href="/department-1/category-2">Category 2</a></li>
+									<li><a href="/department-1/category-3">Category 3</a></li>
+									<li><a href="/department-1/category-4">Category 4</a></li>
+									<li><a href="/department-1/category-5">Category 5</a></li>
+								</ul>
+								<h3 class="department-2">
+									<span></span>
+									<a class="menu-item-texto" href="/department-2">Department 2</a>
+								</h3>
+								<ul class="department-2">
+									<li><a href="/department-2/category-1">Category 1</a></li>
+									<li><a href="/department-2/category-2">Category 2</a></li>
+								</ul>
+								<div class="brandFilter">
+									<h3>Marcas</h3>
+									<ul>
+										<li> <a href="/brand-1">Brand 1</a> </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="_row _searchTitle">
+						<div class="_tag">&lt;vtex.cmc:searchTitle /&gt;</div>
+						<div class="_html">
+							<h2 class="titulo-sessao">Título</h2>
+						</div>
+					</div>
+					<div class="_row _singleDepartmentNavigator">
+						<div class="_tag">&lt;vtex.cmc:singleDepartmentNavigator/&gt;</div>
+						<div class="_html">
+							<div class="menu-departamento">
+								<span class="rt"></span>
+								<span class="rb"></span>
+								<h3 class="department">
+									<span></span>
+									<a href="/" title="Department">Department</a>
+								</h3>
+								<ul class="even">
+									<li class="last">
+										<a href="/" title="Tudo">Tudo (62)</a>
+									</li>
+								</ul>
+								<h4 class="department">
+									<a href="/">Produtos (7)</a>
+								</h4>
+								<h5 class=" even">Marca</h5>
+								<ul class=" even">
+									<li class="last">
+										<a href="/" title="Brand">Brand (87)</a>
+									</li>
+								</ul>
+								<h5 class="">Filtros Especiais</h5>
+								<ul class="">
+									<li>
+										<a href="/" title="department 1">department 1 (10)</a>
+									</li>
+									<li>
+										<a href="/" title="department 2">department 2 (6)</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="_row _searchNavigator">
+						<div class="_tag">&lt;vtex.cmc:searchNavigator/&gt;</div>
+						<div class="_html"><vtex.cmc:searchNavigator/></div>
+					</div>
+					<div class="_row _searchResult">
+						<div class="_tag">&lt;vtex.cmc:searchResult layout="00000000-0000-0000-0000-0000000000" itemCount="10" columnCount="4" /&gt;</div>
+						<div class="_html">
+							<!-- vtex.cmc:searchResult layout="48e223e6-da80-4610-b3d5-4e5cfaf94f13" itemCount="10" columnCount="4" / -->
+						</div>
+					</div>
+				</div>
+				<div class="_all">
+					<div class="_row _loading-html">
+						<div class="_tag">No tag</div>
+						<div class="_html">
+							<div id="ajaxBusy" class="load loading"><p>Aguarde...</p></div>
+						</div>
+					</div>
+					<div class="_row _fullTextSearchBox">
+						<div class="_tag">&lt;vtex.cmc:fullTextSearchBox/&gt;</div>
+						<div class="_html">
+							<fieldset class="busca">
+								<legend>Buscar no site</legend>
+								<label>Buscar</label>
+								<select>
+									<option value="">Todo o site</option>
+									<option value="">Departamento 1</option>
+									<option value="">Departamento 2</option>
+								</select>
+								<input value="" type="hidden"/>
+								<input class="fulltext-search-box ui-autocomplete-input" size="20" accesskey="b" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" type="text"/>
+								<input value="Buscar" class="btn-buscar" type="button"/>
+							</fieldset>
+						</div>
+					</div>
+					<div class="_row _welcomeMessage">
+						<div class="_tag">&lt;vtex.cmc:welcomeMessage/&gt;</div>
+						<div class="_html">
+							<div class="ajax-content-loader" rel="/no-cache/user/welcome">
+							    <p class="welcome"> Bem-vindo! <em><a id="login">Já é cadastrado? </a></em> </p>
+							</div>
+						</div>
+					</div>
+					<div class="_row _AmountItemsInCart">
+						<div class="_tag">&lt;vtex.cmc:AmountItemsInCart/&gt;</div>
+						<div class="_html">
+							<div class="portal-totalizers-ref">
+								<div class="amount-items-in-cart">
+									<div class="cartInfoWrapper">
+										<span class="title">
+											<span id="MostraTextoXml1">Resumo do Carrinho</span>
+										</span>
+										<ul class="cart-info">
+											<li class="amount-products">
+												<strong>
+													<span id="MostraTextoXml2">Total de Produtos:</span>
+												</strong> 
+												<em class="amount-products-em">0</em>
+											</li>
+											<li class="amount-items">
+												<strong>
+													<span id="MostraTextoXml3">Itens:</span>
+												</strong> 
+												<em class="amount-items-em">0</em>
+											</li>
+											<li class="amount-kits">
+												<strong>
+													<span id="MostraTextoXml4">Total de Kits:</span>
+												</strong> 
+												<em class="amount-kits-em">0</em>
+											</li>
+											<li class="total-cart">
+												<strong>
+													<span id="MostraTextoXml5">Valor Total:</span>
+												</strong> 
+												<em class="total-cart-em">R$ 0,00</em>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="_row _miniCart">
+						<div class="_tag">&lt;vtex.cmc:miniCart/&gt;</div>
+						<div class="_html"><vtex.cmc:miniCart/></div>
+					</div>
+				</div>
+				<div class="_pdp">
+					<div class="_row _ProductGifts">
+						<div class="_tag">&lt;vtex.cmc:ProductGifts /&gt;</div>
+						<div class="_html"><vtex.cmc:ProductGifts /></div>
+					</div>
+					<div class="_row _productPageTitle">
+						<div class="_tag">&lt;vtex.cmc:productPageTitle /&gt;</div>
+						<div class="_html"><vtex.cmc:productPageTitle /></div>
+					</div>
+
+					<div class="_row _productName">
+						<div class="_tag">&lt;vtex.cmc:productName/&gt;</div>
+						<div class="_html"><vtex.cmc:productName/></div>
+					</div>
+					<div class="_row _brandName">
+						<div class="_tag">&lt;vtex.cmc:brandName/&gt;</div>
+						<div class="_html"><vtex.cmc:brandName/></div>
+					</div>
+					<div class="_row _ProductImage">
+						<div class="_tag">&lt;vtex.cmc:ProductImage zoom="on"/&gt;</div>
+						<div class="_html">
+							<div class="apresentacao">
+								<div id="setaThumbs"></div>
+								<div id="show">
+									<div id="include">
+										<div id="image" productindex="0">
+											<a class="image-zoom" href="http://edbr.vteximg.com.br/arquivos/ids/160548-1000-1000/Batom_Soul_Kiss_Me_Mate_Nude_Carmin_819772_1.jpg?v=636552622351130000">
+												<img id="image-main" src="http://edbr.vteximg.com.br/arquivos/ids/160548-1000-1000/Batom_Soul_Kiss_Me_Mate_Nude_Carmin_819772_1.jpg?v=636552622351130000" productindex="0" class="sku-rich-image-main">
+											</a>
+										</div>
+									</div>
+									<ul class="thumbs">
+										<li>
+											<a id="botaoZoom" href="javascript:void(0);" title="Zoom" rel="http://edbr.vteximg.com.br/arquivos/ids/160548-1000-1000/Batom_Soul_Kiss_Me_Mate_Nude_Carmin_819772_1.jpg?v=636552622351130000" zoom="http://edbr.vteximg.com.br/arquivos/ids/160548-1000-1000/Batom_Soul_Kiss_Me_Mate_Nude_Carmin_819772_1.jpg?v=636552622351130000" class="ON">
+												<img src="http://edbr.vteximg.com.br/arquivos/ids/160548-55-55/Batom_Soul_Kiss_Me_Mate_Nude_Carmin_819772_1.jpg?v=636552622351130000" title="Batom-Soul-Kiss-Me-Mate-Nude-Carmin" alt="Batom-Soul-Kiss-Me-Mate-Nude-Carmin"/>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="_row _productReference">
+						<div class="_tag">&lt;vtex.cmc:productReference/&gt;</div>
+						<div class="_html"><vtex.cmc:productReference/></div>
+					</div>
+					<div class="_row _StockKeepingUnitPriceHistory">
+						<div class="_tag">&lt;vtex.cmc:StockKeepingUnitPriceHistory Months="6" Percentile="100"/&gt;</div>
+						<div class="_html"><vtex.cmc:StockKeepingUnitPriceHistory Months="6" Percentile="100"/></div>
+					</div>
+					<div class="_row _skuReference">
+						<div class="_tag">&lt;vtex.cmc:skuReference/&gt;</div>
+						<div class="_html"><vtex.cmc:skuReference/></div>
+					</div>
+					<div class="_row _skuPrice">
+						<div class="_tag">&lt;vtex.cmc:skuPrice/&gt;</div>
+						<div class="_html"><vtex.cmc:skuPrice/></div>
+					</div>
+					<div class="_row _stockKeepingUnitSelection">
+						<div class="_tag">&lt;vtex.cmc:stockKeepingUnitSelection /&gt;</div>
+						<div class="_html"><vtex.cmc:stockKeepingUnitSelection /></div>
+					</div>
+					<div class="_row _skuRichSelection">
+						<div class="_tag">&lt;vtex.cmc:skuRichSelection changeImage="1" /&gt;</div>
+						<div class="_html"><vtex.cmc:skuRichSelection changeImage="1" /></div>
+					</div>
+					<div class="_row _skuSelection">
+						<div class="_tag">&lt;vtex.cmc:skuSelection /&gt;</div>
+						<div class="_html"><vtex.cmc:skuSelection /></div>
+					</div>
+					<div class="_row _OtherPaymentMethod">
+						<div class="_tag">&lt;vtex.cmc:OtherPaymentMethod/&gt;</div>
+						<div class="_html"><vtex.cmc:OtherPaymentMethod/></div>
+					</div>
+					<div class="_row _Delivery">
+						<div class="_tag">&lt;vtex.cmc:Delivery/&gt;</div>
+						<div class="_html"><vtex.cmc:Delivery/></div>
+					</div>
+					<div class="_row _shippingValue">
+						<div class="_tag">&lt;vtex.cmc:shippingValue/&gt;</div>
+						<div class="_html">
+							<p id="popupCalculoFreteWrapper" class="frete">
+							    <a onclick="ShippingValue();" href="javascript:void(0);" title="Calcule o valor do frete e prazo de entrega para a sua região" class="shipping-value">Calcule o valor do frete e prazo de entrega para a sua região</a>
+							</p>
+							<div id="calculoFrete" seller="1" produtocorrente="468" skucorrente="1791">
+							    <div class="contentWrapper">
+							        <div class="header">
+							            <h1><a target="_parent" href="/" id="ctl00_lnkHome">Loja</a></h1>
+							            <h2>Calcular o Frete</h2>
+							            <div class="close">
+							                <a href="javascript:void(0);" class="bt btn-thickbox" title="Fechar" id="lnkFechar1">Fechar</a>
+							            </div>
+							        </div>
+							        <div id="ctl00_Conteudo_upnlContent">
+							            <input name="CEPObrigatorio" id="CEPObrigatorio" value="O CEP deve ser informado." type="hidden">
+							            <input name="CEPInvalido" id="CEPInvalido" value="CEP inválido." type="hidden">
+							            <input name="ProdutoQuantidadeObrigatorio" id="ProdutoQuantidadeObrigatorio" value="É necessário informar a quantidade do mesmo Produto." type="hidden">
+							            <input id="StrCountry" value="BRA" type="hidden">
+							            <div class="content">
+							                <div style="display: none;" class="aviso-erro" id="ctl00_Conteudo_lblErro">
+							                    <div style="color: Red; display: none;" id="ctl00_Conteudo_vldSummary"></div>
+							                </div>
+							                <fieldset>
+							                    <label class="prefixo">
+							                        Calcular o Frete
+							                        <input class="fitext freight-zip-box" id="txtCep" name="txtCep" value="" type="text">
+							                    </label>
+							                    <div class="quantity">
+							                        <input name="quantity" value="1" type="text">
+							                    </div>
+							                    <span class="frete-calcular btBordas btBordasInput">
+							                        <input id="stockKeepingUnitId" name="stockKeepingUnitId" value="1791" type="hidden">
+							                        <input class="bt freight-btn" title="OK" id="btnFreteSimulacao" value="OK" 
+							                            name="btnFreteSimulacao" type="button">
+							                        <span class="rdbd bdl"></span>
+							                        <span class="rdbd bdr"></span>
+							                    </span>
+							                    <span style="color: Red; display: none;" id="RegularExpressionValidator1"></span>
+							                    <span style="color: Red; display: none;" id="RegularExpressionValidator2"></span>
+							                    <span class="cep-busca">
+							                        <a title="Não sei meu CEP" class="bt lnkExterno" target="_blank" href="http://www.buscacep.correios.com.br/sistemas/buscacep/">Não sei meu CEP</a>
+							                    </span>
+							                </fieldset>
+							                <div class="freight-values" style="display: none"></div>
+							                <span style="color: Red; display: none;" id="reqCep1"></span>
+							                <span style="color: Red; display: none;" id="reqCep2"></span>
+							            </div>
+							        </div>
+							        <div class="footer">
+							            <div class="close">
+							                <a href="javascript:void(0);" class="bt btn-thickbox" title="Fechar" id="lnkFechar2">Fechar</a>
+							            </div>
+							        </div>
+							    </div>
+							</div>
+						</div>
+					</div>
+					<div class="_row _stockKeepingUnitRewardValue">
+						<div class="_tag">&lt;vtex.cmc:stockKeepingUnitRewardValue/&gt;</div>
+						<div class="_html">
+							<div id="div_content_rewardValue">
+							     <span class="RewardValueTitle">Pontos Fidelidade:</span>
+							     <label class="lblRewardValue">0,00</label>
+							</div>
+						</div>
+					</div>
+					<div class="_row _stockKeepingUnitService">
+						<div class="_tag">&lt;vtex.cmc:stockKeepingUnitService/&gt;</div>
+						<div class="_html"><vtex.cmc:stockKeepingUnitService/></div>
+					</div>
+					<div class="_row _BuyTogether">
+						<div class="_tag">&lt;vtex.cmc:BuyTogether/&gt;</div>
+						<div class="_html"><vtex.cmc:BuyTogether/></div>
+					</div>
+					<div class="_row _ProductDescription">
+						<div class="_tag">&lt;vtex.cmc:ProductDescription/&gt;</div>
+						<div class="_html">
+							<div class="productDescription">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime fugit ratione assumenda recusandae? Dolor consectetur non eos, possimus dignissimos necessitatibus provident omnis error numquam, quos deserunt inventore soluta pariatur.
+							</div>
+						</div>
+					</div>
+					<div class="_row _productDescriptionShort">
+						<div class="_tag">&lt;vtex.cmc:productDescriptionShort /&gt;</div>
+						<div class="_html"><vtex.cmc:productDescriptionShort /></div>
+					</div>
+					<div class="_row _productSpecification">
+						<div class="_tag">&lt;vtex.cmc:productSpecification/&gt;</div>
+						<div class="_html">
+							<div id="caracteristicas">
+								<h4 class="group Caracteristicas">Características</h4>
+								<table class="group Caracteristicas" cellspacing="0">
+									<tbody>
+										<tr class="even">
+											<th class="name-field Lorem-Ipsum">Lorem Ipsum</th>
+											<td class="value-field Lorem-Ipsum">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptatem enim ut vitae quod obcaecati reiciendis perspiciatis suscipit tempore in, praesentium unde quaerat ea doloribus veniam consectetur quis minima, necessitatibus?<br/>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laborum, eaque distinctio saepe ipsum ab. Dolore consectetur soluta enim, tempora ad odio placeat possimus maiores laboriosam harum corrupti vel ut.
+											</td>
+										</tr>
+										<tr>
+											<th class="name-field Lorem-Ipsum">Lorem Ipsum</th>
+											<td class="value-field Lorem-Ipsum">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptatem enim ut vitae quod obcaecati reiciendis perspiciatis suscipit tempore in, praesentium unde quaerat ea doloribus veniam consectetur quis minima, necessitatibus?<br/>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laborum, eaque distinctio saepe ipsum ab. Dolore consectetur soluta enim, tempora ad odio placeat possimus maiores laboriosam harum corrupti vel ut.
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="_row _StockKeepingUnitAttributes">
+						<div class="_tag">&lt;vtex.cmc:StockKeepingUnitAttributes/&gt;</div>
+						<div class="_html"><vtex.cmc:StockKeepingUnitAttributes/></div>
+					</div>
+					<div class="_row _stockKeepingUnitMeasures">
+						<div class="_tag">&lt;vtex.cmc:stockKeepingUnitMeasures/&gt;</div>
+						<div class="_html"><vtex.cmc:stockKeepingUnitMeasures/></div>
+					</div>
+					<div class="_row _ProductTag">
+						<div class="_tag">&lt;vtex.cmc:ProductTag/&gt;</div>
+						<div class="_html"><vtex.cmc:ProductTag/></div>
+					</div>
+					<div class="_row _PageSearch">
+						<div class="_tag">&lt;vtex.cmc:PageSearch/&gt;</div>
+						<div class="_html"><vtex.cmc:PageSearch/></div>
+					</div>
+					<div class="_row _BuyButton">
+						<div class="_tag">&lt;vtex.cmc:BuyButton/&gt;</div>
+						<div class="_html"><vtex.cmc:BuyButton/></div>
+					</div>
+					<div class="_row _BuyInPage">
+						<div class="_tag">&lt;vtex.cmc:BuyInPage/&gt;</div>
+						<div class="_html"><vtex.cmc:BuyInPage/></div>
+					</div>
+					<div class="_row _stockKeepingUnitAmountAndUnitSelection">
+						<div class="_tag">&lt;vtex.cmc:stockKeepingUnitAmountAndUnitSelection /&gt;</div>
+						<div class="_html"><vtex.cmc:stockKeepingUnitAmountAndUnitSelection /></div>
+					</div>
+					<div class="_row _evaluationRate">
+						<div class="_tag">&lt;vtex.cmc:evaluationRate/&gt;</div>
+						<div class="_html"><vtex.cmc:evaluationRate/></div>
+					</div>
+					<div class="_row _UserReview">
+						<div class="_tag">&lt;vtex.cmc:UserReview/&gt;</div>
+						<div class="_html"><vtex.cmc:UserReview/></div>
+					</div>
+					<div class="_row _HightLight">
+						<div class="_tag">&lt;vtex.cmc:HightLight/&gt;</div>
+						<div class="_html"><vtex.cmc:HightLight/></div>
+					</div>
+					<div class="_row _discountHightLight">
+						<div class="_tag">&lt;vtex.cmc:discountHightLight/&gt;</div>
+						<div class="_html"><vtex.cmc:discountHightLight/></div>
+					</div>
+					<div class="_row _SellerOptions">
+						<div class="_tag">&lt;vtex.cmc:SellerOptions /&gt;</div>
+						<div class="_html"><vtex.cmc:SellerOptions /></div>
+					</div>
+					<div class="_row _sellerDescription">
+						<div class="_tag">&lt;vtex.cmc:sellerDescription /&gt;</div>
+						<div class="_html"><vtex.cmc:sellerDescription /></div>
+					</div>
+					<div class="_row _sellerInfo">
+						<div class="_tag">&lt;vtex.cmc:sellerInfo /&gt;</div>
+						<div class="_html"><vtex.cmc:sellerInfo /></div>
+					</div>
+					<div class="_row _SalesChannelDropList">
+						<div class="_tag">&lt;vtex.cmc:SalesChannelDropList /&gt;</div>
+						<div class="_html"><vtex.cmc:SalesChannelDropList /></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
